@@ -48,3 +48,81 @@ To play the game, you need:
 4. When you're done, you can remove all the generated files:
    ```bash
    make clean
+
+---
+
+## Example Gameplay
+
+```bash
+Tic-Tac-Toe rules :
+1- Players take turns placing their symbol (X or O) in an empty square.
+2- A player cannot place their symbol in an already occupied square.
+3- The game continues until:
+        * A player wins by forming a winning pattern (horizontal, vertical or diagonal).
+        * All squares are filled (resulting in a tie).
+-------------
+| 1 | 2 | 3 |
+-------------
+| 4 | 5 | 6 |
+-------------
+| 7 | 8 | 9 |
+-------------
+Player 1: 1
+-------------
+| x | 2 | 3 |
+-------------
+| 4 | 5 | 6 |
+-------------
+| 7 | 8 | 9 |
+-------------
+Player 2: 2
+-------------
+| x | o | 3 |
+-------------
+| 4 | 5 | 6 |
+-------------
+| 7 | 8 | 9 |
+-------------
+Player 1: 7
+-------------
+| x | o | 3 |
+-------------
+| 4 | 5 | 6 |
+-------------
+| x | 8 | 9 |
+-------------
+Player 2: 4
+-------------
+| x | o | 3 |
+-------------
+| o | 5 | 6 |
+-------------
+| x | 8 | 9 |
+-------------
+Player 1: 9
+-------------
+| x | o | 3 |
+-------------
+| o | 5 | 6 |
+-------------
+| x | 8 | x |
+-------------
+Player 2: 5
+-------------
+| x | o | 3 |
+-------------
+| o | o | 6 |
+-------------
+| x | 8 | x |
+-------------
+Player 1: 8
+-------------
+| x | o | 3 |
+-------------
+| o | o | 6 |
+-------------
+| x | x | x |
+-------------
+Player 1 WON !!
+Do you want to replay?
+Enter 1 for Yes or 0 for No: 0
