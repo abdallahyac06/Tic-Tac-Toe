@@ -44,7 +44,7 @@ void printArrayIn2D(char A[], int n, int rows, int columns) {
             if (A[k]) {
                 std::cout << A[k];
             } else {
-            std::cout << k + 1;
+                std::cout << k + 1;
             }
             std::cout << " |";
             k++;
