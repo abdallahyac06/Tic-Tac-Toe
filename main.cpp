@@ -4,8 +4,8 @@
 
 const int ROWS_COLUMNS = 3;
 const int BOARD_SIZE = ROWS_COLUMNS * ROWS_COLUMNS;
-const char X = 'x';
-const char O = 'o';
+const char PLAYER1 = 'X';
+const char PLAYER2 = 'O';
 
 int main() {
     char board[BOARD_SIZE];
@@ -28,7 +28,7 @@ int main() {
             printArrayIn2D(board, BOARD_SIZE, ROWS_COLUMNS, ROWS_COLUMNS);
             std::cout << "Player 1: ";
             std::cin >> position;
-            while (!placeMark(board, BOARD_SIZE, X, position - 1)) {
+            while (!placeMark(board, BOARD_SIZE, PLAYER1, position - 1)) {
                 std::cout << "Invalid move (Enter 0 to exit) : ";
                 std::cin >> position;
                 if (position == 0) {
@@ -36,7 +36,7 @@ int main() {
                 }
             }
 
-            winner1 = checkWin(board, ROWS_COLUMNS, X);
+            winner1 = checkWin(board, ROWS_COLUMNS, PLAYER1);
             if (winner1 || fullArray(board, ROWS_COLUMNS * ROWS_COLUMNS)) {
                 break;
             }
@@ -44,7 +44,7 @@ int main() {
             printArrayIn2D(board, BOARD_SIZE, ROWS_COLUMNS, ROWS_COLUMNS);
             std::cout << "Player 2: ";
             std::cin >> position;
-            while (!placeMark(board, BOARD_SIZE, O, position - 1)) {
+            while (!placeMark(board, BOARD_SIZE, PLAYER2, position - 1)) {
                 std::cout << "Invalid move (Enter 0 to exit) : ";
                 std::cin >> position;
                 if (position == 0) {
@@ -52,7 +52,7 @@ int main() {
                 }
             }
 
-            winner2 = checkWin(board, ROWS_COLUMNS, O);
+            winner2 = checkWin(board, ROWS_COLUMNS, PLAYER2);
             if (winner2 || fullArray(board, ROWS_COLUMNS * ROWS_COLUMNS)) {
                 break;
             }

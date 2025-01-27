@@ -29,7 +29,8 @@ void printArrayIn2D(char A[], int n, int rows, int columns) {
     }
 
     int k = 0;
-        
+    std::cout << std::endl;
+
     for (int i = 0; i < columns * 4 + 1; i++) {
         std::cout << '-';
     }
@@ -40,7 +41,11 @@ void printArrayIn2D(char A[], int n, int rows, int columns) {
 
         for (int j = 0; j < columns; j++) {
             std::cout << ' ';
-            if (A[k]) std::cout << A[k]; else std::cout << k + 1;
+            if (A[k]) {
+                std::cout << A[k];
+            } else {
+            std::cout << k + 1;
+            }
             std::cout << " |";
             k++;
         }

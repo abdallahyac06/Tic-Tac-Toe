@@ -44,7 +44,7 @@ To play the game, you need:
    make
 3. Run the main program:
    ```bash
-   .\main.out
+   ./main.out
 4. When you're done, you can remove all the generated files:
    ```bash
    make clean
@@ -60,6 +60,7 @@ Tic-Tac-Toe rules :
 3- The game continues until:
         * A player wins by forming a winning pattern (horizontal, vertical or diagonal).
         * All squares are filled (resulting in a tie).
+
 -------------
 | 1 | 2 | 3 |
 -------------
@@ -68,60 +69,67 @@ Tic-Tac-Toe rules :
 | 7 | 8 | 9 |
 -------------
 Player 1: 1
+
 -------------
-| x | 2 | 3 |
+| X | 2 | 3 |
 -------------
 | 4 | 5 | 6 |
 -------------
 | 7 | 8 | 9 |
 -------------
 Player 2: 2
+
 -------------
-| x | o | 3 |
+| X | O | 3 |
 -------------
 | 4 | 5 | 6 |
 -------------
 | 7 | 8 | 9 |
 -------------
 Player 1: 7
+
 -------------
-| x | o | 3 |
+| X | O | 3 |
 -------------
 | 4 | 5 | 6 |
 -------------
-| x | 8 | 9 |
+| X | 8 | 9 |
 -------------
 Player 2: 4
+
 -------------
-| x | o | 3 |
+| X | O | 3 |
 -------------
-| o | 5 | 6 |
+| O | 5 | 6 |
 -------------
-| x | 8 | 9 |
+| X | 8 | 9 |
 -------------
 Player 1: 9
+
 -------------
-| x | o | 3 |
+| X | O | 3 |
 -------------
-| o | 5 | 6 |
+| O | 5 | 6 |
 -------------
-| x | 8 | x |
+| X | 8 | X |
 -------------
 Player 2: 5
+
 -------------
-| x | o | 3 |
+| X | O | 3 |
 -------------
-| o | o | 6 |
+| O | O | 6 |
 -------------
-| x | 8 | x |
+| X | 8 | X |
 -------------
 Player 1: 8
+
 -------------
-| x | o | 3 |
+| X | O | 3 |
 -------------
-| o | o | 6 |
+| O | O | 6 |
 -------------
-| x | x | x |
+| X | X | X |
 -------------
 Player 1 WON !!
 Do you want to replay?
