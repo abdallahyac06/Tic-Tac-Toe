@@ -8,24 +8,25 @@ void initialize(char A[], int n) {
 }
 
 bool placeMark(char A[], int n, char Mark, int position) {
-    if (A[position] == '\0' && position < n && position >= 0) {
+    if (!A[position] && position < n && position >= 0) {
         A[position] = Mark;
         return true;
     }
-        return false;
+    return false;
 }
 
 bool fullArray(char A[], int n) {
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < n; i++) {
         if (!A[i]) {
             return false;
         }
+    }
     return true;
 }
 
 void printArrayIn2D(char A[], int n, int rows, int columns) {
     if (n < rows * columns) {
-        return ;
+        return;
     }
 
     int k = 0;
@@ -43,7 +44,8 @@ void printArrayIn2D(char A[], int n, int rows, int columns) {
             std::cout << ' ';
             if (A[k]) {
                 std::cout << A[k];
-            } else {
+            }
+            else {
                 std::cout << k + 1;
             }
             std::cout << " |";
