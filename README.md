@@ -27,7 +27,7 @@ A simple yet fun implementation of the classic Tic-Tac-Toe game that runs in the
 ### Prerequisites
 
 To play the game, you need:
-- A terminal (Linux or WSL).
+- A Windows terminal.
 - The appropriate runtime environment:
   - G++ (C++ compiler).
   - Make
