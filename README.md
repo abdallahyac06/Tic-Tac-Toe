@@ -38,7 +38,7 @@ To play the game, you need:
 1. Clone this repository:
    ```bash
    git clone https://github.com/abdallahyac06/Tic-Tac-Toe
-   cd tic-tac-toe-terminal
+   cd Tic-Tac-Toe
 2. Build the project:
    ```bash
    make
