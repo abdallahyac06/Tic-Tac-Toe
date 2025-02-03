@@ -44,7 +44,7 @@ To play the game, you need:
    make
 3. Run the main program:
    ```bash
-   ./main.out
+   ./main
 4. When you're done, you can remove all the generated files:
    ```bash
    make clean
